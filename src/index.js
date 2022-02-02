@@ -99,4 +99,6 @@ server.listen().then(({ url }) => {
   console.log(`🚀  Server ready at ${url}`);
 });
 
-// (time)m week 17, day 1 (graphql)
+// (time)m week 17, day 1 (graphql) Completed!!!
+
+// (time)m week 17, day 2 (graphql) Completed!!!
