@@ -1,4 +1,4 @@
-const { gql } = require("apollo-server");
+const { ApolloServer, gql } = require("apollo-server");
 
 const typeDefs = gql`
   type Author {
@@ -29,5 +29,9 @@ const resolvers = {
     authors: authorResolver,
   },
 };
+
+const server = new ApolloServer({
+  typeDefs,
+});
 
 // (time)m week 17, day 1 (graphql)
