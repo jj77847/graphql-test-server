@@ -5,21 +5,52 @@ const booksFromDB = [
     id: "111",
     title: "Book 1",
     pages: 100,
+    author: {
+      firstName: "David",
+      lastName: "Gemmell",
+    },
   },
   {
     id: "222",
     title: "Book 2",
     pages: 100,
+    author: {
+      firstName: "David",
+      lastName: "Gemmell",
+    },
   },
   {
     id: "333",
     title: "Book 3",
     pages: 100,
+    author: {
+      firstName: "Terry",
+      lastName: "Pratchit",
+    },
   },
   {
     id: "444",
     title: "Book 4",
     pages: 100,
+    author: {
+      firstName: "rudard",
+      lastName: "kipling",
+    },
+  },
+];
+
+const authorsFromDB = [
+  {
+    firstName: "David",
+    lastName: "Gemmell",
+  },
+  {
+    firstName: "Terry",
+    lastName: "Pratchit",
+  },
+  {
+    firstName: "rudard",
+    lastName: "kipling",
   },
 ];
 
@@ -47,7 +78,10 @@ const booksResolver = () => {
   return booksFromDB;
 };
 
-const authorResolver = () => {};
+const authorResolver = () => {
+  console.log("Author resolver called");
+  return authorsFromDB;
+};
 
 const resolvers = {
   Query: {
