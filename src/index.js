@@ -1,5 +1,28 @@
 const { ApolloServer, gql } = require("apollo-server");
 
+const booksFromDB = [
+  {
+    id: "111",
+    title: "Book 1",
+    pages: 100,
+  },
+  {
+    id: "222",
+    title: "Book 2",
+    pages: 100,
+  },
+  {
+    id: "333",
+    title: "Book 3",
+    pages: 100,
+  },
+  {
+    id: "444",
+    title: "Book 4",
+    pages: 100,
+  },
+];
+
 const typeDefs = gql`
   type Author {
     firstName: String
@@ -10,6 +33,7 @@ const typeDefs = gql`
     id: String
     title: String
     author: Author
+    pages: String
   }
 
   type Query {
@@ -20,6 +44,7 @@ const typeDefs = gql`
 
 const booksResolver = () => {
   console.log("Books resolver called");
+  return booksFromDB;
 };
 
 const authorResolver = () => {};
