@@ -1,7 +1,7 @@
 {
   "name": "graphql-test-server",
   "version": "1.0.0",
-  "description": "Testing implementing a grapgql server and installing various dependencies.",
+  "description": "Testing a server and installing various dependencies.",
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js"
