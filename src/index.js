@@ -18,7 +18,9 @@ const typeDefs = gql`
   }
 `;
 
-const booksResolver = () => {};
+const booksResolver = () => {
+  console.log("Books resolver called");
+};
 
 const authorResolver = () => {};
 
