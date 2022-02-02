@@ -101,4 +101,4 @@ server.listen().then(({ url }) => {
 
 // (time)m week 17, day 1 (graphql) Completed!!!
 
-// (time)m week 17, day 2 (graphql) Completed!!!
+// (time)m week 17, day 2 (graphql)
