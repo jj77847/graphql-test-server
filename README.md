@@ -1,2 +1,3 @@
 # graphql-test-server
-Testing implementing a grapgql server and installing various dependencies.
+
+Testing implementing a server and installing various dependencies.
