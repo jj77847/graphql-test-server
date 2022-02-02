@@ -1,6 +1,6 @@
 const { gql } = require("apollo-server");
 
-const schema = gql`
+const typeDefs = gql`
   type Author {
         firstName: String
         lastName: String 
@@ -14,10 +14,20 @@ const schema = gql`
   }
 
   type Query {
-      
     books: [Book]
     authors: [Author]
   }
 `;
+
+const booksResolver = () => {};
+
+const authorResolver = () => {};
+
+const resolvers = {
+  Query: {
+    books: booksResolver,
+    authors: authorResolver,
+  },
+};
 
 // (time)m week 17, day 1 (graphql)
